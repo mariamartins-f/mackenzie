@@ -16,7 +16,7 @@
 
     <div style="width: 100%; max-height: 500px;">
         <video width="100%" height="auto" autoplay loop>
-            <source src="video/video_web.mp4" type="video/mp4">
+            <source src="/petshop/video/video_web.mp4" type="video/mp4">
             Seu navegador não suporta este formato de vídeo.
         </video>
     </div>
@@ -28,8 +28,35 @@
 </div>
 
     <section id="faleconosco">
-        <h2 style="font-family: 'Trebuchet MS', sans-serif">Fale Conosco</h2>
-        <p style="font-family: 'Trebuchet MS', sans-serif"> Entre em contato conosco para mais informações sobre produtos e serviços.</p>
+        <h2 style="font-family: 'Trebuchet MS', sans-serif;">Fale Conosco</h2>
+        <p style="font-family: 'Trebuchet MS', sans-serif"> Entre em contato conosco para mais
+             informações sobre produtos e serviços.</p>
+        <h2 style="font-family: 'Trebuchet MS', sans-serif; display: flex;justify-content: center;">Preencha o formulário</h2>
+        <form style="display: flex;justify-content: center;">
+            <fieldset style="width: 30%; margin: auto; display: flex; flex-direction: column; gap: 16px;">
+                <label for="fname" style="font-family: 'Trebuchet MS', sans-serif;">Nome:</label>
+                <input type=”text” required name="nome" placeholder="Digite seu nome">
+                <label for="email" style="font-family: 'Trebuchet MS', sans-serif;">Email:</label>
+                <input type=”email” placeholder="Digite seu email">
+                <label for="adress"style="font-family: 'Trebuchet MS', sans-serif;">Endereço</label>
+                <input type=”text” placeholder="Digite seu endereço">
+                <label for="phone" style="font-family: 'Trebuchet MS', sans-serif;">Telefone</label>
+                <input type=”text” required name="tel" placeholder="(xx) xxxxx-xxxx">
+                <label for="assunto" style="font-family: 'Trebuchet MS', sans-serif;">Assunto:</label>
+                    <select id="assunto" name="assunto">
+                        <option value="posvendas">Pós vendas</option>
+                        <option value="servicos">Serviços Pet</option>
+                        <option value="parcerias">Parcerias</option>
+                        <option value="sugestao">Sugestões</option>
+                        <option value="reclamacao">Reclamações</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                <textarea name="mensagem" placeholder="Digite sua mensagem" rows="4" cols="50"></textarea>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    
+    
     </section>
 </body> 
 
